@@ -1,0 +1,1251 @@
+========
+Cycle:  1
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 -1 		 -1 		 -1
+L.D F2,45(R3) 			 -1 		 -1 		 -1 		 -1
+MUL.D F0,F2,F4 			 -1 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 -1 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 True 		 L.D 		 F6 		 R2 		 -1 		 null 		  		 True 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	Integer	null	null	null	null	null	null	null	null	null	null	null	
+
+========
+Cycle:  2
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 -1 		 -1
+L.D F2,45(R3) 			 -1 		 -1 		 -1 		 -1
+MUL.D F0,F2,F4 			 -1 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 -1 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+1 			 Integer 		 True 		 L.D 		 F6 		 R2 		 -1 		 null 		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	Integer	null	null	null	null	null	null	null	null	null	null	null	
+
+========
+Cycle:  3
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 -1
+L.D F2,45(R3) 			 -1 		 -1 		 -1 		 -1
+MUL.D F0,F2,F4 			 -1 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 -1 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 True 		 L.D 		 F6 		 R2 		 -1 		 null 		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	Integer	null	null	null	null	null	null	null	null	null	null	null	
+
+-->>update regs : F6
+========
+Cycle:  4
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 -1 		 -1 		 -1 		 -1
+MUL.D F0,F2,F4 			 -1 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 -1 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	
+
+========
+Cycle:  5
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 -1 		 -1 		 -1
+MUL.D F0,F2,F4 			 -1 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 -1 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 True 		 L.D 		 F2 		 R3 		 -1 		 null 		  		 True 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	Integer	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	
+
+========
+Cycle:  6
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 -1 		 -1
+MUL.D F0,F2,F4 			 6 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 -1 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+1 			 Integer 		 True 		 L.D 		 F2 		 R3 		 -1 		 null 		  		 False 		 False
+0 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 Integer 		 null 		 False 		 True
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	Integer	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	
+
+========
+Cycle:  7
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 -1
+MUL.D F0,F2,F4 			 6 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 -1 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 True 		 L.D 		 F2 		 R3 		 -1 		 null 		  		 False 		 False
+10 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 Integer 		 null 		 False 		 True
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 True 		 SUB.D 		 F8 		 F2 		 F6 		 Integer 		 null 		 False 		 True
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	Integer	null	null	null	null	null	Add	null	null	null	null	null	null	null	null	null	
+
+-->>update regs : F2
+-->>update AWB :
+-->>update AWB :
+-->>update AWB :
+========
+Cycle:  8
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 -1 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 -1 		 -1 		 -1
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+10 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 True 		 True
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+2 			 Add 		 True 		 SUB.D 		 F8 		 F2 		 F6 		 null 		 null 		 True 		 True
+0 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	Add	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  9
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 -1 		 -1
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+10 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+2 			 Add 		 True 		 SUB.D 		 F8 		 F2 		 F6 		 null 		 null 		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	Add	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  10
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 -1 		 -1
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+9 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+1 			 Add 		 True 		 SUB.D 		 F8 		 F2 		 F6 		 null 		 null 		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	Add	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  11
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 -1
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+8 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 True 		 SUB.D 		 F8 		 F2 		 F6 		 null 		 null 		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	Add	null	Divide	null	null	null	null	null	null	null	
+
+-->>update regs : F8
+-->>update AWB :
+========
+Cycle:  12
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 -1 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+7 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  13
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 -1 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+6 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 True 		 ADD.D 		 F6 		 F8 		 F2 		 null 		 null 		 True 		 True
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	Add	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  14
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+5 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+2 			 Add 		 True 		 ADD.D 		 F6 		 F8 		 F2 		 null 		 null 		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	Add	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  15
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 -1 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+4 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+1 			 Add 		 True 		 ADD.D 		 F6 		 F8 		 F2 		 null 		 null 		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	Add	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  16
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 -1
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+3 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 True 		 ADD.D 		 F6 		 F8 		 F2 		 null 		 null 		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	Add	null	null	null	Divide	null	null	null	null	null	null	null	
+
+-->>update regs : F6
+-->>update AWB :
+========
+Cycle:  17
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+2 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  18
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 -1 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+1 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  19
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 -1
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 True 		 MUL.D 		 F0 		 F2 		 F4 		 null 		 null 		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 Mult1 		 null 		 False 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+Mult1	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+-->>update regs : F0
+-->>update AWB :
+========
+Cycle:  20
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 -1 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 True 		 True
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  21
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+40 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  22
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+39 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  23
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+38 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  24
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+37 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  25
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+36 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  26
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+35 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  27
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+34 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  28
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+33 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  29
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+32 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  30
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+31 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  31
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+30 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  32
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+29 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  33
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+28 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  34
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+27 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  35
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+26 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  36
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+25 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  37
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+24 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  38
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+23 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  39
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+22 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  40
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+21 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  41
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+20 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  42
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+19 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  43
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+18 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  44
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+17 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  45
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+16 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  46
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+15 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  47
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+14 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  48
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+13 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  49
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+12 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  50
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+11 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  51
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+10 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  52
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+9 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  53
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+8 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  54
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+7 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  55
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+6 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  56
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+5 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  57
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+4 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  58
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+3 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  59
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+2 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  60
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 -1 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+1 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  61
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 61 		 -1
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 True 		 DIV.D 		 F10 		 F0 		 F6 		 null 		 null 		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	Divide	null	null	null	null	null	null	null	
+
+========
+Cycle:  62
+instruction			issue		read		execute		write
+L.D F6,34(R2) 			 1 		 2 		 3 		 4
+L.D F2,45(R3) 			 5 		 6 		 7 		 8
+MUL.D F0,F2,F4 			 6 		 9 		 19 		 20
+SUB.D F8,F2,F6 			 7 		 9 		 11 		 12
+DIV.D F10,F0,F6 			 8 		 21 		 61 		 62
+ADD.D F6,F8,F2 			 13 		 14 		 16 		 17
+leftCycle			name		busy		op		fi		fj		fk		qj		qk		rj		rk
+0 			 Integer 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult1 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Mult2 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Add 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+0 			 Divide 		 False 		  		 -1 		 -1 		 -1 		  		  		 False 		 False
+regStatus
+F0	F1	F2	F3	F4	F5	F6	F7	F8	F9	F10	F11	F12	F13	F14	F15	R2	R3	
+
+null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null	
+
